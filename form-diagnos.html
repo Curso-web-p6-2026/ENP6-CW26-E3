@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario Diagnóstico ETE</title>
+    </head>
+    <body>
+        <h1>FORMULARIO DIAGNÓSTICO</h1>
+        <form>
+            <fieldset>
+                <legend>DATOS PERSONALES:</legend>
+                <label>Nombre:</label>
+                <input type="text" name="nombre" required>
+                <br>
+                <label>Grupo:</label>
+                <input type="text" name="grupo" required>
+                <br>
+                <label>Correo:</label>
+                <input type="email" name="correo">
+                <br>
+                <label>Turno:</label>
+                <br>
+                <label><input type="radio" name="turno" required>Matutino</label>
+                <br>
+                <label><input type="radio" name="turno" required>Vespertino</label>
+            </fieldset>
+            <fieldset>
+                <legend>PREGUNTAS SOBRE LA ETE</legend>
+                <label>¿Cuál fue tu motivo para elegir el Estudio Técnico Especializado en Computación?</label>
+                <input type="text" name="motivo" required>
+                <br>
+                <label>¿Tienes conocimientos previos sobre computación o programación?</label>
+                <br>
+                <label><input type="radio" name="conocimientos" required>Si</label>
+                <br>
+                <label><input type="radio" name="conocimientos" required>No</label>
+                <br>
+                <label>En el caso de que si tengas, mencionalos:</label>
+                <input type="text" name="cuales-conocimientos">
+                <br>
+                <label>¿Trabajas?</label>
+                <br>
+                <label><input type="radio" name="trabajo" required>Si</label>
+                <br>
+                <label><input type="radio" name="trabajo" required>No</label>
+                <br>
+                <label>¿Tienes actividades que se contrapongan con la ETE?</label>
+                <br>
+                <label><input type="radio" name="actividades" required>Si</label>
+                <br>
+                <label><input type="radio" name="actividades" required>No</label>
+                <br>
+                <label>En el caso de que si tengas, mencionalos:</label>
+                <input type="text" name="cuales-actividades">
+            </fieldset>
+            <fieldset>
+                <legend>PREGUNTAS SOBRE ESTUDIOS</legend>
+                <label>¿Eres alumno regular?</label>
+                <br>
+                <label><input type="radio" name="reg" required>Si</label>
+                <br>
+                <label><input type="radio" name="reg" required>No</label>
+                <br>
+                <label><input type="radio" name="reg" required>Masomenos</label>
+                <br>
+                <label>¿Qué métodos de estudio realizas?</label>
+                <input type="text" name="metodo"> 
+                <br>
+                <label>¿Qué haces cuando no comprendes un tema?</label>
+                <input type="text" name="accion">    
+            </fieldset>
+        </form>
+    </body>
+</html>
