@@ -38,7 +38,7 @@
                 <br>
                 <label><input type="radio" name="conocimientos" required>No</label>
                 <br>
-                <label>En el caso de que si tengas, mencionalos:</label>
+                <label>En el caso de que si tengas, mencionalos :</label>
                 <input type="text" name="cuales-conocimientos">
                 <br>
                 <label>¿Trabajas?</label>
@@ -46,6 +46,12 @@
                 <label><input type="radio" name="trabajo" required>Si</label>
                 <br>
                 <label><input type="radio" name="trabajo" required>No</label>
+                <br>
+                <label>En el caso de que si tengas trabajo, este se contrapone con la ETE?(si no es tu caso selecciona no)</label>
+                <br>
+                <label><input type="radio" name="trabajo-ete" required>Si</label>
+                <br>
+                <label><input type="radio" name="trabajo-ete" required>No</label>
                 <br>
                 <label>¿Tienes actividades que se contrapongan con la ETE?</label>
                 <br>
@@ -64,10 +70,30 @@
                 <br>
                 <label><input type="radio" name="reg" required>No</label>
                 <br>
-                <label>¿Qué métodos de estudio realizas?</label>
-                <input type="text" name="metodo"> 
+                <label>¿Conoces algún método de estudio?</label>
                 <br>
-                <label>¿Qué haces cuando no comprendes un tema?</label>
+                <label><input type="radio" name="metodo" required>Si</label>
+                <br>
+                <label><input type="radio" name="metodo" required>No</label>
+                <br>
+                <label>En caso de que si, menciona los que utilizas:</label>
+                <input type="text" name="que-metodos"> 
+                <br>
+                <label>En que caso de que no, selecciona que haces para estudiar:</label>
+                <select name="metodo">
+                    <option value=""> - Selecciona - </option>
+                    <option value="">Leer </option>
+                    <option value="">Memorizar</option>
+                    <option value="">Hacer ejercicios sobre el tema</option>
+                    <option value="">Ver videos educativos</option>
+                    <option value="">Material de apoyo</option>
+                    <option value="">Cursos</option>
+                </select>
+                <br>
+                <label>Otro:</label>
+                <input type="text" name="que-metodo"> 
+                <br>
+                <label>Si tú método no llegase a funcionar, ¿qué haces cuando no comprendes un tema?</label>
                 <input type="text" name="accion">    
             </fieldset>
         </form>
