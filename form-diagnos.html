@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,91 +11,98 @@
         <h1>FORMULARIO DIAGNÓSTICO</h1>
         <form>
             <fieldset>
-                <legend>DATOS PERSONALES:</legend>
-                <label>Nombre:</label>
-                <input type="text" name="nombre" required>
-                <br>
-                <label>Grupo:</label>
-                <input type="text" name="grupo" required>
-                <br>
-                <label>Correo:</label>
-                <input type="email" name="correo">
-                <br>
-                <label>Turno:</label>
-                <br>
+                <legend>DATOS PERSONALES</legend>
+                <div>
+                    <label>Nombre:</label>
+                    <input type="text" name="nombre" required>
+                </div>
+                <div>
+                    <label>Grupo curricular:</label>
+                    <input type="text" name="grupo" required>
+                </div>
+                <div>
+                    <label>Correo:</label>
+                    <input type="email" name="correo">
+                </div>
+                <p>Turno:</p> <!--Creo que para las de opción múltiple es mejor un párrafo que una label-->
                 <label><input type="radio" name="turno" required>Matutino</label>
-                <br>
                 <label><input type="radio" name="turno" required>Vespertino</label>
             </fieldset>
             <fieldset>
                 <legend>PREGUNTAS SOBRE LA ETE</legend>
-                <label>¿Cuál fue tu motivo para elegir el Estudio Técnico Especializado en Computación?</label>
-                <input type="text" name="motivo" required>
-                <br>
-                <label>¿Tienes conocimientos previos sobre computación o programación?</label>
-                <br>
+                <div>
+                    <label>¿Cuál fue tu motivo para elegir el Estudio Técnico Especializado en Computación?</label>
+                    <input type="text" name="motivo" required>
+                </div>
+                <p>¿Tienes conocimientos previos sobre computación o programación?</p>
                 <label><input type="radio" name="conocimientos" required>Si</label>
-                <br>
                 <label><input type="radio" name="conocimientos" required>No</label>
-                <br>
-                <label>En el caso de que si tengas, mencionalos :</label>
-                <input type="text" name="cuales-conocimientos">
-                <br>
-                <label>¿Trabajas?</label>
-                <br>
-                <label><input type="radio" name="trabajo" required>Si</label>
-                <br>
-                <label><input type="radio" name="trabajo" required>No</label>
-                <br>
-                <label>En el caso de que si tengas trabajo, este se contrapone con la ETE?(si no es tu caso selecciona no)</label>
-                <br>
-                <label><input type="radio" name="trabajo-ete" required>Si</label>
-                <br>
-                <label><input type="radio" name="trabajo-ete" required>No</label>
-                <br>
-                <label>¿Tienes actividades que se contrapongan con la ETE?</label>
+                <div>
+                    <label>En el caso de que si tengas, mencionalos :</label>
+                    <input type="text" name="cuales-conocimientos">
+                </div>
+                <p>¿Tienes actividades extra además del Estudio Técnico y la prepa?</p>
                 <br>
                 <label><input type="radio" name="actividades" required>Si</label>
-                <br>
                 <label><input type="radio" name="actividades" required>No</label>
-                <br>
-                <label>En el caso de que si tengas, mencionalos:</label>
-                <input type="text" name="cuales-actividades">
+                <p>¿Cuáles?</p>
+                <input type="checkbox" id="actividades-extra-1" name="actividades-extra" value="">
+                <label for="actividades-extra-1">Actividades extracurriculares de la ENP</label>
+                <input type="checkbox" id="actividades-extra-2" name="actividades-extra" value="">
+                <label for="actividades-extra-2">Trabajo</label>
+                <input type="checkbox" id="actividades-extra-3" name="actividades-extra" value="">
+                <label for="actividades-extra-3">Asignaturas en contraturno</label>
+                <input type="checkbox" id="actividades-extra-4" name="actividades-extra" value="">
+                <label for="actividades-extra-4">Otro Estudio Técnico</label>
+                <label for="actividades-extra-5">Otra(s):</label>
+                <input type="text" id="actividades-extra-5" name="actividades-extra"> 
+                <p>De acuerdo a cómo son tus horarios, ¿podrás asistir de manera regular a las clases del ETE? (recuerda que son 2 horas diarias)</p>
+                <input type="radio" id="horas-1" name="horas" value="" required>
+                <label for="horas-1">Sí, podré assitir a las 10 horas semanales</label>
+                <input type="radio" id="horas-2" name="horas" value="" required>
+                <label for="horas-2">No, tendré que faltar 1-2 horas a la semana</label>
+                <input type="radio" id="horas-3" name="horas" value="" required>
+                <label for="horas-3">No, tendré que faltar 3-4 horas a la semana</label>
+                <input type="radio" id="horas-4" name="horas" value="" required>
+                <label for="horas-4">No, tendré que faltar más de 4 horas a la semana</label>
             </fieldset>
             <fieldset>
                 <legend>PREGUNTAS SOBRE ESTUDIOS</legend>
-                <label>¿Eres alumno regular?</label>
-                <br>
+                <p>¿Considerarías que tu grupo curricular es un grupo demandante?</p>
+                <input type="radio" id="grupo-demandante-1" name="grupo-demandante" value="" required>
+                <label for="grupo-demandante-1">Sí</label>
+                <input type="radio" id="grupo-demandante-2" name="grupo-demandante" value="" required>
+                <label for="grupo-demandante-2">No</label>
+                <p>¿Eres alumno regular?</p>
                 <label><input type="radio" name="reg" required>Si</label>
-                <br>
                 <label><input type="radio" name="reg" required>No</label>
-                <br>
-                <label>¿Conoces algún método de estudio?</label>
-                <br>
+                <p>¿Conoces algún método de estudio?</p>
                 <label><input type="radio" name="metodo" required>Si</label>
-                <br>
                 <label><input type="radio" name="metodo" required>No</label>
-                <br>
-                <label>En caso de que si, menciona los que utilizas:</label>
-                <input type="text" name="que-metodos"> 
-                <br>
-                <label>En que caso de que no, selecciona que haces para estudiar:</label>
-                <select name="metodo">
-                    <option value=""> - Selecciona - </option>
-                    <option value="">Leer </option>
-                    <option value="">Memorizar</option>
-                    <option value="">Hacer ejercicios sobre el tema</option>
-                    <option value="">Ver videos educativos</option>
-                    <option value="">Material de apoyo</option>
-                    <option value="">Cursos</option>
-                </select>
-                <br>
-                <label>Otro:</label>
-                <input type="text" name="que-metodo"> 
-                <br>
-                <label>Si tú método no llegase a funcionar, ¿qué haces cuando no comprendes un tema?</label>
-                <input type="text" name="accion">    
+                <div>
+                    <label>En caso de que si, menciona los que utilizas:</label>
+                    <input type="text" name="que-metodos"> 
+                </div>
+                <div>
+                    <label>En que caso de que no, selecciona que haces para estudiar:</label>
+                    <select name="metodo">
+                        <option value=""> - Selecciona - </option>
+                        <option value="">Leer </option>
+                        <option value="">Memorizar</option>
+                        <option value="">Hacer ejercicios sobre el tema</option>
+                        <option value="">Ver videos educativos</option>
+                        <option value="">Material de apoyo</option>
+                        <option value="">Cursos</option>
+                    </select>
+                    <label>Otro:</label>
+                    <input type="text" name="que-metodo"> 
+                </div>
+                <div>
+                    <label>Si tú método no llegase a funcionar, ¿qué haces cuando no comprendes un tema?</label>
+                    <input type="text" name="accion">   
+                </div> 
             </fieldset>
+            <button type="submit">Enviar</button>
         </form>
     </body>
 </html>
